@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Main {
 
-    public static final int lowestKey = -3 * 12 + 10 - 1 ;
-    public static final int highestKey = 5 * 12 + 1 - 1;
+    public static final int LOWEST_KEY = -3 * 12 + 10 - 1 ;
+    public static final int HIGHEST_KEY = 5 * 12 + 1 - 1;
 
     private final static ObjectMapper mapper = new ObjectMapper();
 
@@ -54,7 +54,7 @@ public class Main {
 
         var index = note.get(0) * 12 + note.get(1) - 1 + shift; // zero index is [0, 1]
 
-        if (index < lowestKey || index > highestKey) {
+        if (index < LOWEST_KEY || index > HIGHEST_KEY) {
             throw new OutOfKeyboardException();
         }
 

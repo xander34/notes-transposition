@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
 
         if (args.length < 2) {
-            System.out.println("Usage: java -jar target/notes-transposition-1.0-SNAPSHOT-jar-with-dependencies.java <list> <shift>");
+            System.out.println("Usage: java -jar target/transpose.java <list> <shift>");
             return;
         }
 
